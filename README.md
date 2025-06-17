@@ -22,7 +22,7 @@ Recommended Method: Use the KIAUH (Klipper Installation And Update Helper) scrip
 
 Restore Your Configuration from GitHub:
 
-This process replaces the default configuration directory with your customized version from your GitHub repository. (Directions are from the following source: https://github.com/EricZimmerman/Voron-Documentation/blob/main/community/howto/EricZimmerman/BackupConfigToGithub.md)
+This process replaces the default configuration directory with your customized version from your GitHub repository. (Directions are from the following source: Eric Zimmerman's GitHub Backup Guide)
 
 a. Connect to your printer via SSH.
 
