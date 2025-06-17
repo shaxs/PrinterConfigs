@@ -1,2 +1,6 @@
 printer.cfg
 printer-*.cfg
+moonraker-sql.db
+mainsail.cfg
+.gitignore
+moonraker.conf.backup
