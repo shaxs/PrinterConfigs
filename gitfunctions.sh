@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#####################################################################
+# This script is based on the autocommit.sh script by Eric Zimmerman
+# Original source: https://raw.githubusercontent.com/EricZimmerman/VoronTools/main/autocommit.sh
+#####################################################################
+
 # This script can now perform two actions:
 # 'push' (default): Commits and pushes the current config to GitHub.
 # 'fetch': Fetches and resets the local config to match the remote repo.
