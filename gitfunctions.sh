@@ -5,8 +5,8 @@
 # Original source: https://raw.githubusercontent.com/EricZimmerman/VoronTools/main/autocommit.sh
 #####################################################################
 
-# This script can now perform two actions:
-# 'push' (default): Commits and pushes the current config to GitHub.
+# This script can perform two actions:
+# 'backup' (default): Commits and pushes the current config to GitHub.
 # 'fetch': Fetches and resets the local config to match the remote repo.
 
 #####################################################################
@@ -48,7 +48,7 @@ grab_version(){
   fi
 }
 
-push_config(){
+backup_config(){
   # Copy database backup
   if [ -f $db_file ]; then
      echo "sqlite based history database found! Copying..."
@@ -79,5 +79,5 @@ if [ "$1" = "fetch" ]; then
 else
   echo "Backing up config to GitHub..."
   grab_version
-  push_config
+  backup_config
 fi
