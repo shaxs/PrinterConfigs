@@ -22,6 +22,18 @@ This guide outlines the necessary steps to add a new printer to your existing mo
     
   - **Recommended Method:** Use the **KIAUH** (Klipper Installation And Update Helper) script. It provides a simple, menu-driven interface to install everything you need.
     
+  - **a. Install KIAUH:**
+    
+    ```
+    cd ~ && git clone https://github.com/dw-0/kiauh.git
+    ```
+    
+  - **b. Run KIAUH:**
+    
+    ```
+    ./kiauh/kiauh.sh
+    ```
+    
 3. **Install and Configure Cartographer:**
   
   - If your new printer uses the Cartographer probe, it needs to be installed separately.
@@ -81,7 +93,10 @@ This guide outlines the necessary steps to add a new printer to your existing mo
 
 *Next, create the necessary files and folders to keep your new printer's configuration organized.*
 
-1. **Create the Main `printer.cfg` in the Root Directory:**
+1. **Create a New Printer Directory:**
+  
+  - `mkdir -p ~/printer_data/config/configs/printers/trident350`
+2. **Create the Main `printer.cfg` in the Root Directory:**
   
   - This file will now act as the master "switch" that points to your active printer's configuration.
     
@@ -94,22 +109,19 @@ This guide outlines the necessary steps to add a new printer to your existing mo
     [include trident350_config.cfg]
     ```
     
-2. **Create the Printer-Specific Hardware File (in Root):**
+3. **Create the Printer-Specific Hardware File (in Root):**
   
   - Create the main hardware config file in the `~/printer_data/config/` directory.
     
     - `touch ~/printer_data/config/trident350_config.cfg`
-3. **Create the Printer-Specific Settings File (in Subdirectory):**
+4. **Create the Printer-Specific Settings File (in Subdirectory):**
   
-  - Create a new directory for your printer's settings:
-    
-    - `mkdir -p ~/printer_data/config/configs/printers/trident350`
-  - Create the settings file inside the new directory:
+  - Create the settings file inside the new printer's directory:
     
     - `touch ~/printer_data/config/configs/printers/trident350/trident350_settings.cfg`
   - **Action:** Copy the contents of an existing settings file (like `micron_settings.cfg`) into this new settings file as a starting template.
     
-4. **Create New Board Alias Files:**
+5. **Create New Board Alias Files:**
   
   - For any new control boards, create the alias file and place it in `~/printer_data/config/configs/boards/`.
 
