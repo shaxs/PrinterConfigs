@@ -62,7 +62,7 @@ This guide outlines the necessary steps to add a new printer to your existing mo
     
   - **c. Configure Cartographer in Klipper:** Follow the official documentation to add the required sections to your main hardware config file.
     
-    - **Link:** [Cartographer Klipper Configuration Guide](https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/installation/klipper-configuation "null")
+    - **Link:** [Cartographer Klipper Configuration Guide](https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/installation/klipper-configuation "null") NOTE: use ``` SET_KINEMATIC_POSITION Z=100 to trick the printer``` to trick the printer about the z height in order to do the ```CARTOGRAPHER_CALIBRATE METHOD=manual``` command
 4. **Restore Your Configuration from GitHub:**
   
   - This process replaces the default configuration directory with your customized version from your GitHub repository. (Directions are from the following source: [Eric Zimmerman's GitHub Backup Guide](https://github.com/EricZimmerman/Voron-Documentation/blob/main/community/howto/EricZimmerman/BackupConfigToGithub.md "null"))
