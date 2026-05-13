@@ -4,3 +4,8 @@ moonraker-sql.db
 mainsail.cfg
 .gitignore
 moonraker.conf.backup
+
+# Klipper plugin-generated directories — not tracked in repo
+/config/helixscreen
+/config/KAMP
+/config/ShakeTune_results
