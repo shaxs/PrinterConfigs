@@ -1,0 +1,18 @@
+# This file contains the board pin aliases for the Stealthmax PCB v1.
+[board_pins Stealthmax_V1]
+mcu: max
+aliases:
+    # Fans
+    FILTER_FAN=PB14,
+    FILTER_TACH=PB15,
+    AUX_FAN=PA1,
+    AUX_TACH=PA0,
+
+    # Lighting
+    LED_PIN=PD3
+
+# Define the I2C busses specifically so Klipper recognizes them
+# These map to the SENSORS1 and SENSORS2 headers on your PCB
+i2c_bus:
+    i2c1=PB8,PB9
+    i2c2=PB10,PB11
